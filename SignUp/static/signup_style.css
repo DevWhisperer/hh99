@@ -48,6 +48,7 @@ wrap {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    background-color: gray;
 }
 
 #form input {
@@ -63,6 +64,7 @@ wrap {
 }
 
 .wrong {
+    margin-top: 10px;
     color: red;
 }
 
