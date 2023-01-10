@@ -7,17 +7,16 @@
     height: 150px;
     background-color: white;
     color: black;
-    text-align: center;
     vertical-align: 340px;
     font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #title {
     background-color: white;
     color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #form {
