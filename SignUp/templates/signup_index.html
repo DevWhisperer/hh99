@@ -8,30 +8,33 @@
     <link href="../static/signup_style.css" rel="stylesheet">
 </head>
 <body>
-<div id="top">틱톡 뮤직 리스트 ID 생성</div>
+<div id="top">
+    <div id="title">틱톡 뮤직 리스트 ID 생성</div>
+</div>
 <div>
     <form class="container" id="form">
         <div>
-            <input id="lastName" placeholder="성" type="text" class="field">
-            <input id="firstName" placeholder="이름" type="text" class="field">
+            <input class="field" id="lastName" placeholder="성" type="text">
+            <input class="field" id="firstName" placeholder="이름" type="text">
         </div>
-        <div id="email-area" class="field">
-            <input type="text" id="str_email01" placeholder="이메일">
+        <div class="field" id="email-area">
+            <input id="str_email01" placeholder="이메일" type="text">
             @
-            <input type="text" id="str_email02" disabled>
-            <select id="selectEmail">
+            <input disabled id="str_email02" type="text">
+            <span id='selectEmail'>
+                <select>
                 <option>--선택--</option>
                 <option value="naver.com">naver.com</option>
                 <option value="gmail.com">gmail.com</option>
                 <option value="1">직접 입력</option>
             </select>
-
+            </span>
         </div>
         <div id="password_area">
-            <input id="password" placeholder="암호" type="password" class="field">
+            <input class="field" id="password" placeholder="암호" type="password">
         </div>
         <div>
-            <input id="passwordConfirm" placeholder="암호 확인" type="password" class="field">
+            <input class="field" id="passwordConfirm" placeholder="암호 확인" type="password">
         </div>
         <button onclick="save_account()" type="button">계속</button>
     </form>
