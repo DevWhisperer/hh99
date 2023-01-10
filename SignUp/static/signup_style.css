@@ -69,3 +69,7 @@ body {
     margin-top: 15px;
     font-size: 30px;
 }
+#submit-button{
+    width: 100px;
+    margin-bottom: 30px;
+}
