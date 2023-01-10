@@ -28,11 +28,11 @@ wrap {
 }
 
 #top {
-    height: 150px;
+    height: 60px;
     background-color: white;
     color: black;
     vertical-align: 340px;
-    font-size: 60px;
+    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,6 @@ wrap {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: gray;
 }
 
 #form input {
