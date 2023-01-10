@@ -7,7 +7,7 @@ import certifi
 # db 연결 시 certifi 사용함(없으면 db연결이 저는 안됨)
 ca = certifi.where()
 
-client = MongoClient('mongodb+srv://seungho:19960724@cluster0.y2z4pif.mongodb.net/Cluster0?retryWrites=true&w=majority',tlsCAFile=ca)
+client = MongoClient('mongodb+srv://yunseo:sparta@cluster0.6bemlvq.mongodb.net/?retryWrites=true&w=majority',tlsCAFile=ca)
 db = client.dbsparta
 
 @app.route('/')
@@ -20,17 +20,17 @@ def web_signup_post():
     email_receive = request.form['email_give']
     password_receive = request.form['password_give']
     doc = {
-        'name':name_receive,
+        'username':name_receive,
         'email':email_receive,
         'password':password_receive
     }
-    db.signup.insert_one(doc)
+    db.users.insert_one(doc)
 
     return jsonify({'msg': '가입 완료'})
 
 @app.route("/signin", methods=["GET"])
 def web_signup_get():
-    user_list = list(db.signup.find({}, {'_id': False}))
+    user_list = list(db.users.find({}, {'_id': False}))
     return jsonify({'users': user_list})
 
 # 5100 포트로 했음
