@@ -78,10 +78,11 @@ const getActive = (target) => {
     fieldList.forEach(item => item.classList.remove('active', 'semi-active'))
     target.classList.add('active')
 }
+const plus =()=> {
+    alert('dd')
+}
 let fieldList = document.querySelectorAll("input")
 // fieldList.splice(4,0,"ddd")
 fieldList.forEach(field => field.addEventListener('focus', (e) => {
     getActive(e.target)
 }))
-// document.getElementById("#selectEmail").addEventListener("click",(e)=>alert('d'))
-console.log(document.getElementById("#selectEmail"))
