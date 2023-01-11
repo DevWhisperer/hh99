@@ -21,22 +21,50 @@
             </div>
             <div class="field" id="email-area">
                 <input id="str_email01" placeholder="이메일" type="text">
-                @
-                <input disabled id="str_email02" type="text">
-                <span id='selectEmail'>
-                <select>
-                <option>--선택--</option>
-                <option value="naver.com">naver.com</option>
-                <option value="gmail.com">gmail.com</option>
-                <option value="1">직접 입력</option>
-            </select>
-            </span>
+                <span id="golbangi">@</span>
+                <span>
+                    <input disabled id="str_email02" type="text">
+                    <div id='selectEmail'>
+                        <select>
+                            <option>--선택--</option>
+                            <option value="naver.com">naver.com</option>
+                            <option value="gmail.com">gmail.com</option>
+                            <option value="1">직접 입력</option>
+                        </select>
+                    </div>
+                </span>
             </div>
             <div id="password_area">
                 <input class="field" id="password" placeholder="암호" type="password">
             </div>
             <div>
                 <input class="field" id="passwordConfirm" placeholder="암호 확인" type="password">
+            </div>
+
+            <div class="wrap">
+                <a class="btn_open" href="#pop_info_1">회원 약관</a>
+
+
+                <div class="pop_wrap" id="pop_info_1" style="display:none;">
+                    <div class="pop_inner">
+                        <p class="dsc">
+                        <div>Terms are ...</div>
+                        <div id="check-area">
+                            <input id="c1" type="checkbox"><label for="c1">약관 1</label>
+                            <input id="c2" type="checkbox"><label for="c2">약관 2</label>
+                            <input id="c3" type="checkbox"><label for="c3">약관 3</label>
+                            <input id="c_all" type="checkbox"><label for="c_all">전체 동의</label>
+                        </div>
+
+                        </p>
+                        <button class="btn_close" type="button">닫기</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="welcome-area">
+                <h8 style="color: white">.</h8>
             </div>
             <div id="submit-button-area">
                 <button class="btn btn-dark" id="submit-button" onclick="save_account()" type="button">회원가입</button>
